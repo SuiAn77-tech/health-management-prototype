@@ -1,0 +1,43 @@
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:#1e293b;background:#f8f9fb}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#f8f9fb}
+.app-shell{width:100%;max-width:430px;min-height:100vh;margin:0 auto;position:relative;background:#f8f9fb}
+.vector-page{display:block;width:100%;height:auto;overflow:hidden}
+.vector-page text{font-family:Arial,"Microsoft YaHei",sans-serif}
+.control{cursor:pointer;touch-action:manipulation;pointer-events:bounding-box;-webkit-tap-highlight-color:transparent;outline:none}
+.control:focus-visible{outline:2px solid #fb7185;outline-offset:2px}
+.control .control{pointer-events:none}
+.cause-filter[aria-pressed="true"] .filter-fill{fill:#f43f5e}
+.cause-filter[aria-pressed="false"] .filter-fill{fill:#fff}
+.cause-filter[aria-pressed="true"] .filter-border{stroke:#f43f5e}
+.cause-filter[aria-pressed="false"] .filter-border{stroke:#f1f5f9}
+.cause-filter[aria-pressed="true"] .filter-label{fill:#fff}
+.cause-filter[aria-pressed="false"] .filter-label{fill:#334155}
+.choice .choice-fill{fill:#f8f9fb;fill-opacity:1}
+.choice .choice-border{stroke:#f1f5f9;stroke-opacity:1}
+.choice .choice-label{fill:#475569}
+.choice .choice-sub{fill:#94a3b8}
+.choice .indicator-on{display:none}
+.choice .indicator-off{display:inline}
+.choice[aria-checked="true"] .choice-fill{fill:#fff1f2;fill-opacity:.8}
+.choice[aria-checked="true"] .choice-border{stroke:#ffe4e6}
+.choice[aria-checked="true"] .choice-label,.choice[aria-checked="true"] .choice-sub{fill:#f43f5e}
+.choice[aria-checked="true"] .indicator-on{display:inline}
+.choice[aria-checked="true"] .indicator-off{display:none}
+.diet-choice[aria-checked="false"] .diet-check{display:none}
+.diet-choice[aria-checked="true"] .diet-check{display:inline}
+.diet-choice[aria-checked="true"] .diet-label{fill:#f43f5e;stroke:none}
+.diet-choice[aria-checked="false"] .diet-label{fill:#64748b;stroke:none}
+.diet-choice[aria-checked="true"] .choice-fill{fill:#fff1f2}
+.diet-choice[aria-checked="true"] .choice-border{stroke:#ffe4e6}
+.diet-choice[aria-checked="false"] .choice-fill{fill:#fff}
+.diet-choice[aria-checked="false"] .choice-border{stroke:#e2e8f0}
+[role="switch"][aria-checked="false"] .switch-track{fill:#cbd5e1}
+[role="switch"] .switch-knob{transform:none}
+.toast{position:fixed;z-index:50;left:50%;bottom:24px;max-width:calc(100% - 32px);padding:10px 15px;transform:translate(-50%,10px);border-radius:14px;color:#fff;background:rgba(30,41,59,.92);opacity:0;pointer-events:none;font-size:12px;transition:opacity .15s,transform .15s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.time-sheet{position:fixed;inset:0;z-index:100}.time-sheet[hidden]{display:none}.time-sheet-backdrop{position:absolute;inset:0;border:0;background:rgba(15,23,42,.28)}
+.time-sheet-panel{position:absolute;left:0;right:0;bottom:0;padding:10px 16px calc(22px + env(safe-area-inset-bottom));border-radius:22px 22px 0 0;background:#f8f9fb;box-shadow:0 -10px 36px rgba(15,23,42,.16);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC",sans-serif}.time-sheet-header{display:flex;align-items:center;justify-content:space-between;height:42px;color:#f43f5e;font-size:15px}.time-sheet-header strong{color:#1e293b;font-size:15px}.time-sheet-header button{border:0;background:none;color:#f43f5e;font-size:15px;padding:8px 4px}.time-wheel{display:flex;align-items:center;justify-content:center;gap:8px;padding:20px 0 12px;font-size:30px;font-weight:600;color:#1e293b}.time-wheel select{width:92px;height:58px;border:0;border-radius:14px;background:#fff;color:#1e293b;text-align:center;text-align-last:center;font-size:30px;font-weight:600;appearance:none;box-shadow:inset 0 0 0 1px #e2e8f0}.time-wheel span{font-size:30px;color:#64748b}
+@media(min-width:700px){html,body{background:#e9eef5}.app-shell{margin:24px auto;box-shadow:0 18px 60px rgba(32,48,68,.12)}}
+@media(prefers-reduced-motion:reduce){.toast{transition:none}}
