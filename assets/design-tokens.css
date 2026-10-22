@@ -1,0 +1,18 @@
+:root {
+  --surface-page: #FFFFFF;
+  --surface-card: #FFFFFF;
+  --surface-subtle: #FFFAFE;
+  --surface-inverse: #111315;
+  --text-primary: #111315;
+  --text-secondary: #6B6B72;
+  --line: #ECE9ED;
+  --accent-primary: #EF92BB;
+  --accent-soft: #F7D9E8;
+  --accent-tint: #F6E5F0;
+  --status-stable: #F7E6EF;
+  --status-watch: #FFE4D8;
+  --status-alert: #F4CCD9;
+  --radius-card: 22px;
+  --radius-button: 18px;
+  --space-unit: 4px;
+}
