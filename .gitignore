@@ -1,0 +1,14 @@
+server-start.log
+tunnel*.out
+tunnel*.err
+server.err
+verification/*.png
+verification/*.html
+verification/*.out
+cloudflared.exe
+
+verification/edge-profile/
+gcm-diagnose.log
+server.log
+*.zip
+
