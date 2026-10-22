@@ -1,0 +1,19 @@
+{
+  "primitive": {
+    "color": { "white": "#FFFFFF", "ink": "#111315", "muted": "#6B6B72", "line": "#ECE9ED", "pink100": "#F7D9E8", "pink200": "#F4C7DB", "pink500": "#EF92BB", "lilac100": "#F6E5F0", "peach100": "#FFE4D8", "rose100": "#F4CCD9" },
+    "radius": { "sm": 12, "md": 16, "lg": 22, "xl": 28 },
+    "space": { "1": 4, "2": 8, "3": 12, "4": 16, "5": 20, "6": 24, "8": 32, "10": 40 }
+  },
+  "semantic": {
+    "surface": { "page": "#FFFFFF", "card": "#FFFFFF", "subtle": "#FFFAFE", "inverse": "#111315" },
+    "text": { "primary": "#111315", "secondary": "#6B6B72", "onInverse": "#FFFFFF" },
+    "accent": { "primary": "#EF92BB", "soft": "#F7D9E8", "tint": "#F6E5F0" },
+    "status": { "stable": "#F7E6EF", "watch": "#FFE4D8", "alert": "#F4CCD9" }
+  },
+  "component": {
+    "card": { "radius": 22, "padding": 16, "border": "#ECE9ED" },
+    "button": { "radius": 18, "height": 56 },
+    "chip": { "radius": 10, "height": 26 },
+    "bottomNav": { "radius": 28, "height": 56 }
+  }
+}
