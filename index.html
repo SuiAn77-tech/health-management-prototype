@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#f6f8fb" />
+    <title>皮肤诱因追踪 · 健康管理</title>
+    <link rel="stylesheet" href="styles.css?v=vector-10" />
+  </head>
+  <body>
+    <main id="app" class="app-shell" aria-live="polite"></main>
+    <input id="photo-input" class="sr-only" type="file" accept="image/*" />
+    <input id="date-input" class="sr-only" type="date" />
+    <div id="toast" class="toast" role="status"></div>
+    <div id="time-sheet" class="time-sheet" hidden>
+      <button class="time-sheet-backdrop" type="button" data-time-action="cancel" aria-label="关闭时间选择"></button>
+      <section class="time-sheet-panel" role="dialog" aria-modal="true" aria-labelledby="time-sheet-title">
+        <div class="time-sheet-header"><button type="button" data-time-action="cancel">取消</button><strong id="time-sheet-title">入睡时间</strong><button type="button" data-time-action="done">完成</button></div>
+        <div class="time-wheel" aria-label="选择入睡时间"><select id="sleep-hour" aria-label="小时"></select><span>:</span><select id="sleep-minute" aria-label="分钟"></select></div>
+      </section>
+    </div>
+    <script src="app.js?v=vector-10" defer></script>
+    <script>if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js?v=10').catch(() => {});</script>
+  </body>
+</html>
+
+
